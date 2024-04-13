@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IncreaseSize : MonoBehaviour
 {
-    public float scaleIncrease = 0.1f;  // Cuánto aumentará la escala cada vez que recoja una moneda
+    public float scaleIncrease = 0.1f;
 
     public void IncreaseScale()
     {

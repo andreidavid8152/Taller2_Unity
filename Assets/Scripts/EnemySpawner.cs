@@ -29,7 +29,7 @@ public class EnemySpawner : MonoBehaviour
     {
         float spawnPosX = Random.Range(meshCollider.bounds.min.x, meshCollider.bounds.max.x);
         float spawnPosZ = Random.Range(meshCollider.bounds.min.z, meshCollider.bounds.max.z);
-        float spawnPosY = 1.85f; // Ajusta según la altura necesaria
+        float spawnPosY = 1.85f;
 
         Vector3 spawnPosition = new Vector3(spawnPosX, spawnPosY, spawnPosZ);
         Instantiate(rockPrefab, spawnPosition, Quaternion.identity);

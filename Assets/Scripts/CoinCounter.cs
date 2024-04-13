@@ -6,7 +6,7 @@ using TMPro;  // Importa el espacio de nombres para TextMeshPro
 public class CoinCounter : MonoBehaviour
 {
     public static int coinCount = 0;  // Variable estática para mantener la cuenta de monedas
-    public TextMeshProUGUI coinCountText;  // Cambia el tipo de Text a TextMeshProUGUI
+    public TextMeshProUGUI coinCountText;
 
     void Update()
     {
