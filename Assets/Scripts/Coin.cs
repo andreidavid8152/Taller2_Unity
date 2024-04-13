@@ -18,7 +18,9 @@ public class Coin : MonoBehaviour
         {
             // Llama al método PlaySound del AudioManager y pasa el coinSound
             audioManager.GetComponent<AudioManager>().PlaySound(coinSound);
+            other.GetComponent<IncreaseSize>().IncreaseScale();  // Llama al método para aumentar el tamaño
 
+            CoinCounter.AddCoin();  // Incrementa el contador de monedas
             Destroy(gameObject); // Destruye la moneda inmediatamente
         }
     }

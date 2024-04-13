@@ -24,6 +24,8 @@ public class GameOver : MonoBehaviour
             audioManager.PlaySound(gameOverSound);
         }
 
+        CoinCounter.coinCount = 0;  // Resetea el contador de monedas a 0
+
         // Reinicia inmediatamente la escena.
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

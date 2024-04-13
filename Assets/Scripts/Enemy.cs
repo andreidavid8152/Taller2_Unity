@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour
                 audioManager.PlaySound(gameOverSound);
             }
 
+            CoinCounter.coinCount = 0;  // Resetea el contador de monedas a 0
+
             // Reinicia la escena inmediatamente, el AudioManager seguirá reproduciendo el sonido.
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
